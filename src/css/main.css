@@ -131,6 +131,6 @@ input[type=checkbox]:checked + .accord-text:before {
     text-align: center!important;
 }
 
-.gallery-content p:last-child{
+.gallery-content .Beauty{
        font-size: 15.5px;
 }

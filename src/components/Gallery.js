@@ -68,10 +68,8 @@ class Gallery extends Component
                          <Galleries galleries={galleries} />
                      </div>
                  </div>
-                 <div className="content-description fixed-bar animated-quick fadeInDown animated gallery-content">
+                 <div className={`content-description fixed-bar animated-quick fadeInDown animated gallery-content ${gallery_text_name}`}>
                      <h2> {gallery_text_name}</h2>
-
-
                      {Parser(gallery_text_desc)}
                  </div>
                 <Footer />
