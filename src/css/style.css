@@ -1105,9 +1105,22 @@ button:focus {
     /*.gallery-banner .lslide {*/
     /*margin: 0px 71px;*/
     /*}*/
+    .form-banner-inner {
+         padding: 0px;
+    }
+    .form-banner-inner .pretty.p-svg.p-plain {
+        width: 36%;
+        margin-right: 0;
+    }
+}
+@media (max-width: 1024px) {
+      .container.grid , .container.form-banner {
+        max-width: 920px;
+    }
 }
 
 @media (max-width: 991px) {
+
     .carousel-item .row .col:last-child {
         display: none !important;
     }
@@ -1154,6 +1167,9 @@ button:focus {
 }
 
 @media (max-width: 767px) {
+    .checkbox-panel {
+        display: block;
+    }
     .carousel {
         margin: 40px auto 0;
     }
@@ -1162,7 +1178,12 @@ button:focus {
         height: auto;
         margin-bottom: 40px;
     }
-
+    .form-banner-inner .pretty.p-svg.p-plain {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        line-height: 28px;
+    }
     #carouselExampleIndicators .col {
         display: block;
     }
@@ -1536,6 +1557,12 @@ button:focus {
         width: 40px;
         height: 54px;
     }
+    .state.label-first{
+        display:flex;
+    }
+    .label-first label{
+        line-height: 20px !important
+    }
 }
 
 @media (max-width: 576px) {
@@ -1697,3 +1724,4 @@ button:focus {
         margin-top: -40px;
     }
 }
+

@@ -121,7 +121,7 @@ class Form extends Component
 
                                         <div className="pretty p-svg p-plain ">
                                             <input type="checkbox"  onChange={this.changeCheckbox} name="original_work_by_artist"/>
-                                            <div className="state ">
+                                            <div className="state label-first">
                                                 <img className="svg" src="/images/task.png" />
                                                 <label>Inquire about originalwork by Robert. </label>
                                             </div>

@@ -134,3 +134,13 @@ input[type=checkbox]:checked + .accord-text:before {
 .gallery-content .Beauty{
        font-size: 15.5px;
 }
+
+.checkbox-panel  .pretty .state label {
+    text-indent: 0;
+    padding-left: 40px;
+}
+
+.checkbox-panel   .pretty.p-svg.p-plain {
+    text-align: left;
+}
+
