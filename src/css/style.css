@@ -41,15 +41,17 @@
     font-weight: normal;
     font-style: normal;
 }
+
 .animateMe {
     opacity: 0.6;
 }
+
 .animateMe {
     width: 250px;
     position: relative;
     min-height: 250px;
     margin: 120px auto;
-    display:block;
+    display: block;
     background-color: darkgray;
     border-radius: 15px;
 }
@@ -59,11 +61,13 @@
 }
 
 
-
-.animateMe .animated{
+.animateMe .animated {
     opacity: 1;
 }
 
+.pretty:first-child .state label:after, .checkbox-panel .pretty:first-child img, .pretty:first-child .state label:before {
+    margin-top: -6px !important;
+}
 
 .animated.fadeInDown {
     -webkit-animation-name: fadeInDown;
@@ -71,6 +75,7 @@
     -o-animation-name: fadeInDown;
     animation-name: fadeInDown;
 }
+
 .animated {
     visibility: visible;
     -webkit-animation-fill-mode: both;
@@ -101,19 +106,23 @@
     width: 20px;
     margin: 30px;
 }
+
 .wrapper {
     margin: 0px auto;
 }
+
 .full_screen .slick-prev {
     left: -2%;
     top: 50%;
     width: 5px
 }
+
 .full_screen .slick-next {
     right: -2%;
     top: 50%;
     width: 5px
 }
+
 .carousel {
     width: 90%;
     margin: 0px auto;
@@ -179,6 +188,7 @@
 .slick-track {
     opacity: 1 !important;
 }
+
 .full_screen .slick-slide img {
     width: 30%;
     position: absolute;
@@ -745,10 +755,6 @@ button:focus {
 /* initially hide animatable objects */
 
 
-
-
-
-
 .content-description {
     max-width: 814px;
     padding: 0 0 170px;
@@ -1106,15 +1112,17 @@ button:focus {
     /*margin: 0px 71px;*/
     /*}*/
     .form-banner-inner {
-         padding: 0px;
+        padding: 0px;
     }
+
     .form-banner-inner .pretty.p-svg.p-plain {
         width: 36%;
         margin-right: 0;
     }
 }
+
 @media (max-width: 1024px) {
-      .container.grid , .container.form-banner {
+    .container.grid, .container.form-banner {
         max-width: 920px;
     }
 }
@@ -1166,24 +1174,54 @@ button:focus {
 
 }
 
+
+@media (max-width: 910px) {
+    .checkbox-panel {
+    display: block;
+}
+.form-banner-inner .pretty.p-svg.p-plain {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 22px;
+}
+.checkbox-panel .pretty .state label {
+    text-indent: 0;
+    padding-left: 40px;
+    margin-top: 10px;
+}
+.form-banner-inner .checkbox-panel  .pretty:first-child .state label:after, .checkbox-panel .pretty:first-child img, .pretty:first-child .state label:before {
+    margin-top: 15px !important;
+}
+.full_screen .slick-slide img{
+    width:70%;
+}
+}
+
 @media (max-width: 767px) {
+    .description-right p {
+        padding-left: 0 !important;
+}
     .checkbox-panel {
         display: block;
     }
+
     .carousel {
         margin: 40px auto 0;
     }
+
     .slick-slide {
         display: block !important;
         height: auto;
         margin-bottom: 40px;
     }
+
     .form-banner-inner .pretty.p-svg.p-plain {
         width: 100%;
         margin-right: 0;
         margin-bottom: 20px;
         line-height: 28px;
     }
+
     #carouselExampleIndicators .col {
         display: block;
     }
@@ -1533,13 +1571,17 @@ button:focus {
     }
 
     .slick-next {
-        right: -31px;
+       right: -7%;
+    width: 10px;
     }
 
     .slick-prev {
-        left: 3px;
-    }
-
+    left: -7%;
+    width: 10px;
+}
+    .full_screen .slick-slide img {
+    width: 70%;
+}
     .slick-slide {
         margin: 0;
     }
@@ -1557,10 +1599,12 @@ button:focus {
         width: 40px;
         height: 54px;
     }
-    .state.label-first{
-        display:flex;
+
+    .state.label-first {
+        display: flex;
     }
-    .label-first label{
+
+    .label-first label {
         line-height: 20px !important
     }
 }
@@ -1723,5 +1767,18 @@ button:focus {
     .content-description {
         margin-top: -40px;
     }
-}
+
+    .form-banner-inner .pretty.p-svg.p-plain {
+           width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    line-height: 13px;
+    height: 27px;
+    }
+    .checkbox-panel .pretty .state label {
+        text-indent: 0;
+        padding-left: 40px;
+        margin-top: 0;
+    }
+    }
 
