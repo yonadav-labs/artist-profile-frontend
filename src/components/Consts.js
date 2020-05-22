@@ -1,3 +1,3 @@
-const url_back = 'http://127.0.0.1:8000'
+const url_back = 'http://64.227.49.168:8000'
 
 export {url_back}

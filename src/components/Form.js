@@ -111,7 +111,7 @@ class Form extends Component
         let email_content = this.props.email_content
 
         return (
-               <section className="container parallax-container form-banner  hero" id="3">
+               <section className="container parallax-container form-banner  hero" id="3_connect">
                            <div className="heading">
                                {Parser(email_content)}
                            </div>
@@ -122,7 +122,7 @@ class Form extends Component
                                         <div className="pretty p-svg p-plain ">
                                             <input type="checkbox"  onChange={this.changeCheckbox} name="original_work_by_artist"/>
                                             <div className="state ">
-                                                <img className="svg" src="/images/task.svg" />
+                                                <img className="svg" src="/images/task.png" />
                                                 <label>Inquire about originalwork by Robert. </label>
                                             </div>
                                         </div>
@@ -130,7 +130,7 @@ class Form extends Component
                                          <div className="pretty p-svg p-plain">
                                             <input type="checkbox" onChange={this.changeCheckbox} name="limited_edition_prints_sculpture" />
                                             <div className="state">
-                                                <img className="svg" src="/images/task.svg" />
+                                                <img className="svg" src="/images/task.png" />
                                                 <label>Inquire about Robert’s limited
                                                edition prints and sculpture.</label>
                                             </div>
@@ -138,7 +138,7 @@ class Form extends Component
                                         <div className="pretty p-svg p-plain">
                                             <input type="checkbox" onChange={this.changeCheckbox}  name="newsletter_from_artist" />
                                             <div className="state">
-                                                <img className="svg" src="/images/task.svg" />
+                                                <img className="svg" src="/images/task.png" />
                                                 <label>To receive a very occasional newsletter
                                                from Robert’s studio please sign up here.</label>
                                             </div>

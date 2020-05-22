@@ -3,12 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Gallery from "./components/Gallery";
 import Home from "./components/Home";
-import './css/bootstrap.min.css'
-import './css/reset.css'
-import './css/animate.min.css'
-import './css/style.css'
-import './css/alertify.min.css'
-import './css/main.css'
+
 import ErrorBoundary from "./components/ErrorBoundary";
 
 import {
@@ -21,8 +16,6 @@ import {
 
 function App() {
   return (
-    <div className="App">
-
         <ErrorBoundary>
             <Router>
                   <Switch>
@@ -31,7 +24,6 @@ function App() {
                   </Switch>
             </Router>
          </ErrorBoundary>
-    </div>
   );
 }
 

@@ -111,3 +111,26 @@ input[type=checkbox]:checked + .accord-text:before {
     top: calc((0% - (100% - 1em)) - 8%);
     background-color: transparent;
 }
+
+
+.pretty.p-svg.p-plain {
+    text-align: center;
+}
+
+.art-name{
+        margin-bottom: .5rem;
+}
+.art-details p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.gallery-content p{
+    text-align: center!important;
+}
+
+.gallery-content p:last-child{
+       font-size: 15.5px;
+}
