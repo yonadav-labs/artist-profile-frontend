@@ -204,6 +204,8 @@
     position: absolute;
     left: -100px;
     top: 50%;
+    width: 10px;
+    height: 30px;
     border: none;
     background-color: transparent;
     color: transparent;
@@ -215,6 +217,8 @@
     position: absolute;
     right: -132px;
     top: 50%;
+    width: 10px;
+    height: 30px;
     border: none;
     background-color: transparent;
     color: transparent;
@@ -1607,6 +1611,10 @@ button:focus {
     .label-first label {
         line-height: 20px !important
     }
+    .main-banner{
+        z-index: 2;
+        padding-top: 40px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1729,7 +1737,7 @@ button:focus {
     }
 
     .gallery-banner img {
-        width: 82%;
+        width: 78%;
     }
 
     .content-description h2 {

@@ -115,7 +115,7 @@ class Home extends Component
                     <Main />
                     <Menu ></Menu>
                     <section className="main-banner">
-                        <div className="parallax-container">
+                        <div className="parallax-container parallax-container-parent">
                             <img src= {headerImage} className="cover-bg" alt="background"/>
                         </div>
                         <h2 className="generic-title"><img src="logo.svg" className="logo"/></h2>
@@ -142,7 +142,7 @@ class Home extends Component
                         </nav>
 
                     </section>
-                    <section className="container grid parallax-container page-section hero" id="1_artwork">
+                    <section className="container grid parallax-container-parent parallax-container page-section hero" id="1_artwork">
                            <div className="heading">
                                {Parser(artwork_content)}
                            </div>

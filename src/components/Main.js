@@ -18,9 +18,19 @@ class Main extends Component {
         });
         if ($(window).width() > 767) {
             $('.page-section').addClass('parallax-container');
+            $('.parallax-container-parent').addClass('parallax-container')
         } else {
             $('.page-section').removeClass('parallax-container');
+             $('.parallax-container-parent').removeClass('parallax-container')
         }
+
+        $(window).on('resize', function () {
+            if ($(window).width() < 767) {
+                $('.parallax-container-parent').removeClass('parallax-container')
+            } else {
+                $('.parallax-container-parent').addClass('parallax-container')
+            }
+        });
 
 
         $(window).scroll(function () {
@@ -69,29 +79,29 @@ class Main extends Component {
         });
 
         function initSlick() {
-            if($("#carousel-page").length){
-              $("#carousel-page").slick({
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                responsive: [
+            if ($("#carousel-page").length) {
+                $("#carousel-page").slick({
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    responsive: [
 
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 2
+                            }
+                        },
+                        {
+                            breakpoint: 767,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                            }
                         }
-                    },
-                    {
-                        breakpoint: 767,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
-            });
+                    ]
+                });
             }
 
 
@@ -115,8 +125,8 @@ class Main extends Component {
 
     render() {
         return (
-            <div></div>
-        )
+            < div > < /div>
+    )
     }
 
 }
